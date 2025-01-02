@@ -1,0 +1,111 @@
+<!-- inline css -->
+
+<!-- <div style="border: 2px solid gray; padding: 15px;"></div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Module-2</title>
+
+    <!-- internal css -->
+    <style>
+        .container{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .design_h1{
+            color: blue;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .card{
+            align-items: center;
+            text-align: center;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .card_img{
+            width: 100%;
+        }
+
+        .price{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .price p{
+            font-weight: 600;
+        }
+        .price span{
+            border: 2px solid gray;
+            padding: 0 6px 0 ;
+        }
+
+        .card_content{
+            align-items: center;
+            text-align: start;
+            padding: 0 15px 0 ;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- inline css example-->
+    <div class="container" style="border: 2px solid gray; padding: 15px;">
+        <h1 class="design_h1">Blog 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quis voluptatem neque perspiciatis ea, maxime corporis exercitationem consequatur aspernatur tempora illum eaque, aut iste amet, doloribus deserunt ipsum velit! Eveniet!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quis voluptatem neque perspiciatis ea, maxime corporis exercitationem consequatur aspernatur tempora illum eaque, aut iste amet, doloribus deserunt ipsum velit! Eveniet!</p>
+    </div>
+        <br>
+    <div class="container">
+        <div class="card" style="border: 2px solid gray;">
+            <div class="card_img">
+                <img style="border-radius: 10px;" src="./img/image.png" alt="">
+            </div>
+            <div class="card_content">
+                <h3>Ladybug wheelybug</h3>
+                <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing.</p>
+                <div class="price">
+                    <p>FURNITURE</p>
+                    <span>$386</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="card" style="border: 2px solid gray;">
+            <div class="card_img">
+                <img style="border-radius: 10px;" src="./img/image.png" alt="">
+            </div>
+            <div class="card_content">
+                <h3>Ladybug wheelybug</h3>
+                <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing.</p>
+                <div class="price">
+                    <p>FURNITURE</p>
+                    <span>$386</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content_1">
+            <div>
+                <img src="./img/img_1.png" alt="">
+            </div>
+            <div class="content_card">
+                <h3>Content 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos repellendus quas sit eligendi ex beatae, illo hic cupiditate maiores voluptas reiciendis inventore.</p>
+            </div>
+            <a class="btn cn" href="">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
