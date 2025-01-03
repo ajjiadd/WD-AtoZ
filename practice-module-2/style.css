@@ -27,3 +27,11 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.cn{
+    box-shadow: 0 8px 8px 0 rgba(228, 11, 11, 0.5);
+}
+
+.cn:hover{
+    box-shadow: 0 8px 8px 0 rgba(53, 5, 227, 0.5);
+}
