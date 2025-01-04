@@ -1,0 +1,102 @@
+Module - 3:
+
+
+1. What is Git? What are the advantages of using Git?
+Git is a distributed version control system that tracks changes in source code during software development. It allows multiple developers to collaborate on a project effectively.
+Advantages of using Git:
+Version control: Tracks changes and allows you to revert to previous versions.
+Collaboration: Enables teams to work on the same codebase without conflicts.
+Branching and Merging: Supports multiple branches for feature development, which can later be merged into the main codebase.
+Speed: Git is fast and lightweight.
+Offline capabilities: Most Git operations can be performed offline.
+Backup and security: Git provides a backup of your code and a secure way to manage your project history.
+
+2. What do you understand by the term 'Version Control System'?
+A Version Control System (VCS) is a tool that helps manage and track changes to files (usually source code).
+Features of a VCS:
+Keeps a history of changes to your files.
+Allows multiple users to work on the same project simultaneously.
+Provides the ability to merge changes from different contributors.
+Helps resolve conflicts when changes overlap.
+Types of VCS:
+Local VCS: Stores version data locally (e.g., RCS).
+Centralized VCS: Stores version data on a central server (e.g., SVN).
+Distributed VCS (like Git): Each user has a complete copy of the repository, enabling offline work and better collaboration.
+
+
+3. What's the difference between Git and GitHub?
+
+Git:
+- A version control system for managing code.
+- Tracks changes in code.
+- Local on your machine.
+- Branching, merging, commit history.
+- Command-line tool.
+
+-------------------------------------------------------------------
+
+
+GitHub:
+- A platform for hosting Git repositories.
+- Facilitates collaboration and project sharing.
+- Cloud-based, accessible online.
+- Issues, pull requests, repository hosting, CI/CD.
+- Web interface with additional tools.
+
+
+
+4. Name a few Git commands with their functions.
+Command & Function
+
+git init
+Initializes a new Git repository.
+
+-------------------------------------------------------------------
+
+git clone <repo-url>
+Copies a remote repository to your local system.
+
+-------------------------------------------------------------------
+
+git status
+Shows the current status of the repository (e.g., staged, unstaged changes).
+
+-------------------------------------------------------------------
+
+git add <file>
+Adds changes in a file to the staging area.
+
+-------------------------------------------------------------------
+
+git commit -m "message"
+Commits changes with a message describing them.
+
+-------------------------------------------------------------------
+
+git push
+Pushes local commits to the remote repository.
+
+-------------------------------------------------------------------
+
+git pull
+Fetches changes from the remote repository and merges them.
+
+-------------------------------------------------------------------
+
+git branch
+Lists branches in the repository.
+
+-------------------------------------------------------------------
+
+git checkout <branch>
+Switches to a specific branch.
+
+-------------------------------------------------------------------
+
+git merge <branch>
+Merges another branch into the current branch.
+
+-------------------------------------------------------------------
+
+
+
