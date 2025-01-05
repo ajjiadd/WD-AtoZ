@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Navbar</title>
+
+    <!-- css code  -->
+    <style>
+        /* general reset  */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Navbar Styling  */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        /* logo styling  */
+        .logo{
+            
+            font-size: 24px;
+            
+            font-weight: bold;
+        }
+
+        .logo a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .logo a span{
+            color: #ff6347;
+        }
+
+        /* Nav links Styling  */
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover{
+            color: #ff6347;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><span>AJ</span>JIAD</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="service">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
