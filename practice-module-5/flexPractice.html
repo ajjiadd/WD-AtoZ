@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex-Box</title>
+
+    <style>
+        .bgOfBox{
+            background-color: #801616;
+            gap: 20px;
+            display: flex;
+            padding: 30px;
+            justify-content: space-around;
+            flex-direction: row;
+            /* flex-direction: column;  */
+            /* flex-direction: row-reverse; */
+
+        }
+
+        .flexBox{
+            background-color: blanchedalmond;
+            border: 2px solid gray;
+            padding: 10px 20px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+            /* animation  */
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: rotateBox 2s infinite alternate;
+        }
+
+        @keyframes rotateBox {
+        0% {
+            transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+            }
+        100% {
+            transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg);
+            }
+        }
+
+        .flexBox:hover {
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4), 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="bgOfBox">
+        <div class="flexBox">Box1</div>
+        <div class="flexBox">Box2</div>
+        <div class="flexBox">Box3</div>
+        <div class="flexBox">Box4</div>
+        <div class="flexBox">Box5</div>
+        <div class="flexBox">Box6</div>
+    </div>
 </body>
 </html>
