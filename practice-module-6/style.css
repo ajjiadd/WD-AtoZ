@@ -135,3 +135,53 @@ nav ul li a{
 .banner-profile-pic{
     width: 584px;
 }
+
+/* about section design  */
+.about{
+    max-width: 1140px;
+    background: #FFF8F3;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    max-width: 827px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    margin: 135px 155px;
+    
+}
+
+.about-title{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-description{
+    font-size: 18px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.bio-address{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.bio-address p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: #757575;
+}
+
+.bio-address p span{
+    font-weight: 700;
+    color: #474747;
+}
