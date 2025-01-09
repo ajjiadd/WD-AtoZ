@@ -185,3 +185,60 @@ nav ul li a{
     font-weight: 700;
     color: #474747;
 }
+
+/* skill section  */
+
+.skills{
+    margin-top: 130px;
+    text-align: center;
+}
+
+.skill-section-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.skill-description{
+ margin: 30px 345px;
+ font-size: 18px;
+ line-height: 30px;
+}
+
+.card-container{
+    display: flex;
+    margin: 30px 200px;
+    gap: 24px;
+}
+
+.card{
+    max-width: 267px;
+    text-align: start;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.img-container{
+    width: 44px;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.card-content{
+    max-width: 204px;
+    margin-top: 30px;
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card-description{
+    font-size: 16px;
+    line-height: 28px;
+}
