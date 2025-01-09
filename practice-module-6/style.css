@@ -151,9 +151,9 @@ nav ul li a{
 .about-content{
     max-width: 827px;
     background: #FFFFFF;
-    border: 2px solid #000000;
+    border: 1px solid #474747;
     margin: 135px 155px;
-    
+    padding: 10px;
 }
 
 .about-title{
@@ -241,4 +241,125 @@ nav ul li a{
 .card-description{
     font-size: 16px;
     line-height: 28px;
+}
+
+/* Bio data sections design  */
+.bioDataSection{
+text-align: center;
+margin: 130px;
+}
+
+.bioDataSecTitle{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.EduExp-container{
+    margin: 80px 200px;
+    display: flex;
+    gap: 24px;
+}
+
+.MyEducation{
+    text-align: start;
+}
+
+.MyExperience{
+    text-align: start;
+}
+
+.subTitle{
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+}
+
+.EduContent{
+
+}
+
+.EduContent h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+    color: #474747;
+}
+
+
+.eduDetails{
+    font-size: 20px;
+    color: #757575;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.eduDescription{
+    font-size: 16px;
+    color: #757575;
+    line-height: 28px;
+}
+
+
+.tpBorder{
+ border-top: 1px solid #D1D1D1;
+ margin-top: 30px;
+}
+
+.BioData-btn-container{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+/* Footer section design  */
+
+.footerSection{
+    background-color: #FFF8F3;
+    max-width: 1600px;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footerContainer{
+    margin: 0 200px;
+    display: flex;
+    gap: 100px;
+}
+
+.footerContainer h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+.footerLeft p{
+    font-size: 16px;
+    color: #474747;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.icon-footer a{
+    text-decoration: none;
+}
+.icon-footer i{
+    font-size: 24px;
+    color: #FD6E0A;
+}
+
+.footerRight .inputsMsg form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerRight .inputsMsg form input,textarea{
+    border-radius: 5px;
+    border: none;
+    color: #757575;
+    background: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 461px;
 }
