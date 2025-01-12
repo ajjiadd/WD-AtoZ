@@ -1,339 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangladesh 2.0</title>
+    <title>Module-7</title>
 
-    <!-- Boxicon icons  -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .greting{
+            background-color: #d21414;
+            display: inline-block;
+        }
+        .greting:hover{
+            background-color: #59c209;
+            color: #d21414;
+            padding: 5px;
+        }
 
-    <!-- CSS link  -->
-    <link rel="stylesheet" href="./style.css">
+        .inputs input:focus{
+            color: #d21414;
+            padding: 5px;
+        }
+
+        ul li:first-child{
+            color: #d21414;
+        }
+
+        .list-items li:last-child{
+            color: #0fcb61;
+
+        }
+
+        .list-items li:nth-child(3){
+            background: #7e7e7e;
+            display: inline-block;
+        }
+
+        /* for even number  */
+        .list-items li:nth-child(2n){
+            border: 1px solid gray;
+        }
+
+        /* for odd number  */
+        .list-items li:nth-child(2n+1){
+            border: 1px solid rgb(220, 21, 21);
+            font-weight: 700;
+        }
+
+        a:visited{
+            color: #3bec05;
+        }
+
+
+    </style>
 </head>
+<body>
+    <h1 class="greting">Hello Jiad</h1>
 
-<body class="body-section">
-    <!-- Header section  -->
-    <header class="header-section">
-        <nav class="container navbar">
-            <h1 class="logo">Bangladesh 2.0</h1>
-            <a class="" href=""><button class="btn">Sign in</button></a>
-        </nav>
-    </header>
+    <div class="inputs">
+        <input type="text">
+        <br>
+        <input type="text">
+        <br>
+        <input type="text">
+    </div>
 
-    <!-- Main Section  -->
-    <main class="container">
-        <!-- Hero section  -->
-        <section class="hero-section">
-            <div class="heroContent">
-                <p>Bangladesh 2.0</p>
-                <h1>Idea, innovation, vision and challenges in New Bangladesh.</h1>
-                <div>
-                    <a href="#"><button class="hero-btn">Explore New Bangladesh</button></a>
-                </div>
-            </div>
-            <div class="heroImg">
-                <img src="./assets/hero.png" alt="hero-image">
-            </div>
-        </section>
+    <ul class="list-items">
+        <li>Jiad</li>
+        <li>Joy</li>
+        <li>Sujon</li>
+        <li>Limon</li>
+        <li>Sabbir</li>
+        <li>Swadhin</li>
+        <li>Tanvir</li>
+    </ul>
 
-        <!-- Pillars section  -->
-        <section class="pillarsSection">
-            <h1>Pillars of "Bangladesh 2.0"</h1>
-            <div class="cardContainer">
-                <div class="pillarCard">
-                    <div>
-                        <img src="./assets/card-icon.png" alt="">
-                    </div>
-
-                    <h2>Innovation</h2>
-                    <p>Pioneering ideas to shape a modern, progressive Bangladesh.</p>
-                </div>
-
-                <div class="pillarCard">
-                    <div>
-                        <img src="./assets/card-icon.png" alt="">
-                    </div>
-
-                    <h2>Sustainability</h2>
-                    <p>Ensuring growth with care for future generations.</p>
-                </div>
-
-                <div class="pillarCard">
-                    <div>
-                        <img src="./assets/card-icon.png" alt="">
-                    </div>
-
-                    <h2>Infrastructure</h2>
-                    <p>Building strong foundations for a connected nation.</p>
-                </div>
-
-                <div class="pillarCard">
-                    <div>
-                        <img src="./assets/card-icon.png" alt="">
-                    </div>
-
-                    <h2>Empowerment</h2>
-                    <p>Uplifting citizens to drive Bangladesh's bright future.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Vison section  -->
-        <section class="visionSection">
-            <h1>The Vision of Future</h1>
-            <p>Bangladesh 2.0 envisions a tech-driven, sustainable future with renewable energy, digital transformation, and inclusive growth, aiming to become a global development model.
-            </p>
-
-            <div class="cardContainer">
-                <div class="visonCard vsnBdy1">
-                    <div class="vsnImg">
-                        <img src="./assets/card-icon.png" alt="">
-                    </div>
-
-                    <h2>Digital Transformation</h2>
-                    <p>Revolutionizing sectors with technology for a smarter, efficient Bangladesh.</p>
-                    <div>
-                        <a href="">
-                            <button class="vsn-btn vsnBtn1">Learn More</button>
-                        </a>
-                        
-                    </div>
-                </div>
-
-                <div class="visonCard vsnBdy2">
-                    <div class="vsnImg">
-                        <img src="./assets/card-icon.png" alt="">
-                    </div>
-
-                    <h2>Green Energy Power</h2>
-                    <p>Adopting renewable energy solutions for a sustainable future.</p>
-                    <div>
-                        <a href="">
-                            <button class="vsn-btn vsnBtn2">Learn More</button>
-                        </a>
-                        
-                    </div>
-                </div>
-
-                <div class="visonCard vsnBdy3">
-                    <div class="vsnImg">
-                        <img src="./assets/card-icon.png" alt="">
-                    </div>
-
-                    <h2>Modern Infrastructure</h2>
-                    <p>Revolutionizing sectors with technology for a smarter, efficient Bangladesh</p>
-                    <div>
-                        <a href="">
-                            <button class="vsn-btn vsnBtn3">Learn More</button>
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="TestimonialBox">
-                <div class="quotePicContainer">
-                    <img src="./assets/quote-bg.png" alt="">
-                </div>
-                <div class="text-container">
-                    <p class="discussion">"We, the people of Bangladesh, united by the spirit of freedom and progress, hereby declare our commitment to building a nation founded on equality, justice, and innovation. Guided by our rich culture and resilient history, we pledge to eradicate poverty, uphold human rights, and ensure access to education, healthcare, and opportunities for all citizens. In this new era, we shall embrace technology, preserve the environment, and foster harmony among our diverse communities. Together, we strive to transform Bangladesh into a beacon of sustainable growth, where every individual can thrive with dignity and contribute to the prosperity of our homeland."</p>
-                    <h3>Dr. Muhammad Yunus</h3>
-                    <p>Chief Adviser of the People's Republic of Bangladesh</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Opinion section  -->
-        <section class="opinionSection">
-            <h1>Your Opinion Matters</h1>
-            <div class="opinionTable">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="1">Questions</th>
-                            <th>Select Your Opinion</th>
-                        </tr>
-                    </thead>
-                   <tbody>
-                    <tr>
-                        <td>Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="dropbtn">Yes, I agree <i class='bx bxs-chevron-down'></i></button>
-                                
-                                <button class="dropdown-content">No, I disagree</button>
-
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Do you agree that technological advancements are playing a significant role in Bangladesh’s progress?</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="dropbtn">Yes, I agree <i class='bx bxs-chevron-down'></i></button>
-                                
-                                <button class="dropdown-content">No, I disagree</button>
-
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Do you think employment opportunities for the youth in Bangladesh are steadily increasing?</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="dropbtn">Yes, I agree <i class='bx bxs-chevron-down'></i></button>
-                                
-                                <button class="dropdown-content">No, I disagree</button>
-
-                            </div>
-                        </td>
-                    </tr>
-
-                   </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- RecentNews section  -->
-         <section class="recentNewsSection">
-            <div class="title-subtitle">
-                <h1>Recent News</h1>
-                <p>Get the most up-to-date and relevant stories from various fields including politics, technology, sports, and entertainment. Stay informed about global events, breakthroughs, and critical updates that shape the world around us. Explore the latest happenings and discover in-depth analyses of trending topics. </p>
-            </div>
-            <div class="newscardContainer">
-                
-                <div class="newsCard">
-                    <div class="nwImgContainer">
-                        <img class="julPic" src="./assets/july-5.png" alt="">
-                    </div>
-                    <div class="txtContainer">
-                        <h2>Bangladesh Prime Minister Sheikh Hasina has been ousted</h2>
-                        <div class="nwLogo">
-                            <img src="./assets/al-jazeera.png" alt="">
-                        </div>
-                        <p>
-                            <span>Date: 05/08/2024</span>
-                            <span class="tm">Time: 10.25 PM</span>
-                        </p>
-                        <p>
-                            Dhaka, Bangladesh – Maliha Namlah says she had been holding her breath since Monday when student-led protests in Bangladesh forced longtime Prime Minister Sheikh Hasina to resign and flee the country after weeks of deadly unrest in which more than 300 people were killed.
-                        </p>
-                        <div class="nwBtnContainer">
-                            <a href="https://www.aljazeera.com/news/2024/8/9/will-yunus-led-interim-government-bring-bangladesh-out-of-its-dark-era"><button class="nwBtn">Read More</button></a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="newsCard nw-crd-rvse">
-                    <div class="nwImgContainer">
-                        <img class="julPic" src="./assets/drYnus2.png" alt="">
-                    </div>
-                    <div class="txtContainer">
-                        <h2>Muhammad Yunus heads home to lead Bangladesh interim government</h2>
-                        <div class="nwLogo">
-                            <img src="./assets/al-jazeera.png" alt="">
-                        </div>
-                        <p>
-                            <span>Date: 07/08/2028</span>
-                            <span class="tm">Time: 03.46 PM</span>
-                        </p>
-                        <p>
-                            Muhammad Yunus, the Nobel Peace laureate tapped to lead an interim government in Bangladesh, has called for calm as he boarded a flight to return home, a day before his new government is expected to be sworn in to replace deposed Prime Minister Sheikh Hasina.
-                        </p>
-                        <div class="nwBtnContainer">
-                            <a href="https://www.aljazeera.com/news/2024/8/7/nobel-winner-yunus-heads-home-as-bangladesh-prepares-for-interim-government"><button class="nwBtn">Read More</button></a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="newsCard">
-                    <div class="nwImgContainer">
-                        <img src="./assets/satelite.png" alt="">
-                    </div>
-                    <div class="txtContainer">
-                        <h2>Bangladesh Launches New Satellite</h2>
-                        <div class="nwLogo">
-                            <img src="./assets/al-jazeera.png" alt="">
-                        </div>
-                        <p>
-                            <span>Date: 12/05/2018</span>
-                            <span class="tm">Time: 10.25 PM</span>
-                        </p>
-                        <p>
-                            It is named after the nation's founder, Bangabandhu Sheikh Mujibur Rahman. The satellite was made by Thales Alenia Space and launched on May 12, 2018, from Kennedy Space Center in the USA. This launch made Bangladesh the 57th country having a satellite of its own in space.
-                        </p>
-                        <div class="nwBtnContainer">
-                            <a href="https://en.wikipedia.org/wiki/Bangabandhu-1#:~:text=The%20Bangabandhu%20Satellite%2D1%20(Bangabandhu,operate%20a%20satellite%20in%20space.&text=SATCAT%20no.">
-                                <button class="nwBtn">Read More</button>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </section>
-
-         <!-- Donate Section  -->
-          <section class="DonateSection">
-            <h1>Donate Today</h1>
-            <p>Your contribution can help build a brighter future for Bangladesh. By donating today, you support key initiatives in education, healthcare, infrastructure, and sustainable development. Join us in creating a prosperous, inclusive, and thriving nation for all. Every donation counts!</p>
-
-            <div class="donateCardContainer">
-                <div class="donateCard">
-                    <h2>100 Taka</h2>
-                </div>
-                <div class="donateCard select-donate">
-                    <h2>200 Taka</h2>
-                </div>
-                <div class="donateCard">
-                    <h2>300 Taka</h2>
-                </div>
-                <div class="donateCard">
-                    <h2>400 Taka</h2>
-                </div>
-                <div class="donateCard">
-                    <h2>500 Taka</h2>
-                </div>
-            </div>
-            <div class="otrAmntbox">
-                <input type="number" id="otherAmount" placeholder="Other Amount (Taka)">
-            </div>
-            <div class="donateBtn">
-                <a href="./assets/qrCode.jpg"><button class="nwBtn">Done Now</button></a>
-            </div>
-          </section>
-
-         <!-- NewsLatter Section  -->
-          <section class="NewsLetterSection">
-            <div class="nl-txt-container">
-                <h1>Subscribe Newsletter </h1>
-                <p>Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge <br> technology, promoting inclusive growth.</p>
-            </div>
-            <div class="nlInputs">
-                <input type="email" placeholder="Enter your email here">
-                <a href="https://github.com/ajjiadd"><button class="nlBtn">Subscribe</button></a>
-            </div>
-            <p>We promise not to spam you!</p>
-          </section>
-
-
-    </main>
-
-    <!-- Footer Section  -->
-    <footer class="FooterSection">
-        <h1>Bangladesh 2.0</h1>
-        <div class="divideLine"></div>
-        <div class="footer-icons">
-            <a href="https://www.facebook.com/abdullaha.ala.jiyada"><img src="./assets/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/aj.jiad/"><img src="./assets/instagram.png" alt=""></a>
-            <a href=""><img src="./assets/x.png" alt=""></a>
-            
-        </div>
-    </footer>
+    <div>
+        <a href="https://www.google.co.uk/">Google</a>
+        <br>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <br>
+        <a href="https://www.youtube.com/">youtube</a>
+        <br>
+        <a href="https://stylaxx.com/">STYLAXX</a>
+    </div>
 </body>
-
 </html>
