@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple-Calander</title>
+    <title>Simple-Calander and simple responsive</title>
 
     <style>
         .calander{
@@ -26,6 +26,54 @@
         .day{
             background-color: #b8b8b8;
             font-size: 1em;
+        }
+
+        .container{
+            margin: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .food{
+            border: 2px solid gray;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0,0.2);
+
+        }
+
+        .food img{
+            width: 70px;
+        }
+
+        /* for small divices  */
+        /* 576px er kom er jonno bebohar kora hoy  */
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* for medium divices  */
+        /* 576px er besi and 776 er kom divice er jonno bebohar kora hoy  */
+        @media screen and (min-width: 576px) and (max-width: 776px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+         /* for medium-big divices  */
+        /* 777px er besi and 976 er kom divice er jonno bebohar kora hoy  */
+        @media screen and (min-width: 777px) and (max-width: 976px) {
+            .container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* some part of responsive  */
+        body{
+            max-width: 1020px;
+            margin: 0 auto;
         }
 
     </style>
@@ -78,5 +126,96 @@
         <div class="date">31</div>
         
     </div>
+
+    <!-- Responsive card design  -->
+    <section class="Repn-card-design">
+        <!-- .container>.food*12>img[src="./image/burger.jpg"]+h3{food Item - $}+p{Price: \$$00}+p>lorem20^btn{Buy Now}  -->
+        <div class="container">
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 1</h3>
+                <p>Price: $100</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam possimus voluptatibus. Itaque tempora, eaque assumenda accusamus atque aspernatur harum.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 2</h3>
+                <p>Price: $200</p>
+                <p>Esse, alias. Eum corrupti fugiat et ex inventore voluptas recusandae blanditiis quae nam delectus. Est eos quia repudiandae voluptates facere?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 3</h3>
+                <p>Price: $300</p>
+                <p>Error ipsa aliquid repudiandae quidem commodi ad est praesentium natus qui perferendis quae officia voluptate provident ipsum, distinctio nesciunt voluptatum.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 4</h3>
+                <p>Price: $400</p>
+                <p>Voluptatem a consectetur aliquid error dolor corporis est animi, amet quaerat obcaecati cumque nulla voluptate, pariatur deserunt dolores, quis similique!</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 5</h3>
+                <p>Price: $500</p>
+                <p>Cum maxime dicta quisquam qui accusantium blanditiis, laboriosam recusandae doloremque quod voluptatem pariatur eligendi ipsa commodi dolorem? Cupiditate, dolorum sit?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 6</h3>
+                <p>Price: $600</p>
+                <p>Recusandae praesentium, eligendi ipsa accusantium repellendus fugit libero delectus quibusdam officia similique quisquam corporis at, cum incidunt eos illo explicabo.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 7</h3>
+                <p>Price: $700</p>
+                <p>Assumenda atque cum enim repellat quia asperiores iure, perferendis, libero perspiciatis blanditiis placeat earum ipsam magnam et architecto expedita error?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 8</h3>
+                <p>Price: $800</p>
+                <p>Dignissimos, omnis expedita modi, recusandae magni nesciunt aspernatur impedit quasi deleniti iusto hic rem! Quia blanditiis nihil nisi quibusdam placeat.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 9</h3>
+                <p>Price: $900</p>
+                <p>Sequi quia illum perspiciatis asperiores eveniet numquam quos consequatur, commodi aperiam ducimus, quam totam tempore impedit, officiis veritatis ratione debitis.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 10</h3>
+                <p>Price: $1000</p>
+                <p>Inventore non, facere similique porro eos harum facilis aliquam et minima fuga dolorum repellat culpa blanditiis commodi eveniet ullam ab?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 11</h3>
+                <p>Price: $1100</p>
+                <p>Facere, placeat animi nemo fugiat ratione veniam cum, non consequuntur, veritatis dicta sequi dolores pariatur magnam iure eveniet quis magni!</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="food">
+                <img src="./image/burger.jpg" alt="">
+                <h3>food Item - 12</h3>
+                <p>Price: $1200</p>
+                <p>Tenetur incidunt culpa doloremque dignissimos sed deserunt unde corrupti consequatur ad architecto odio reiciendis ducimus aliquam eius quas, provident possimus.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
