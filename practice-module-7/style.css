@@ -1,0 +1,97 @@
+.position-container{
+    height: 100vh;
+    background-color: antiquewhite;
+    margin-bottom: 200px;
+}
+
+.background-road{
+    margin: 5px 0;
+    /* width: 900px; */
+    
+}
+
+.background-road .roadPic{
+    width: 100%;
+}
+
+.bus_boy_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: -380px;
+}
+
+ .background-road .boyPic{
+    width: 100%;
+} 
+
+.boyPicContainer{
+    position: relative;
+    width: 170px;
+    top: -7px;
+}
+
+.army-container{
+    position: relative;
+    top: -850px;
+    left: 850px;
+    width: 160px;
+}
+
+.army-container img{
+    width: 100%;
+}
+
+
+.position{
+    position: relative;
+}
+
+.busCon{
+    position: absolute;
+    max-width: 250px;
+    top: 200px;
+}
+.busCon img{
+ width: 100%;
+}
+
+.boyCon{
+    position: absolute;
+    top: 220px;
+    left: 270px;
+    max-width: 100px;
+}
+
+.boyCon img{
+    width: 100%;
+}
+
+.armyCon{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    max-width: 100px;
+}
+
+.armyCon img{
+    width: 100%;
+}
+
+.pseudo-some p:first-child::first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+.pseudo-some p:last-child:after{
+    content: ".pdf";
+}
+
+.pseudo-some p:nth-child(3)::before{
+    content: "This is Jiad, ";
+    font-size: 30px;
+    font-weight: 700;
+    color: brown;
+}
+
+

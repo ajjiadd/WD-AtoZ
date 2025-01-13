@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Module-7</title>
 
     <style>
-        .greting{
+        .greting {
             background-color: #d21414;
             display: inline-block;
         }
-        .greting:hover{
+
+        .greting:hover {
             background-color: #59c209;
             color: #d21414;
             padding: 5px;
         }
 
-        .inputs input:focus{
+        .inputs input:focus {
             color: #d21414;
             padding: 5px;
         }
 
-        ul li:first-child{
+        ul li:first-child {
             color: #d21414;
         }
 
-        .list-items li:last-child{
+        .list-items li:last-child {
             color: #0fcb61;
 
         }
 
-        .list-items li:nth-child(3){
+        .list-items li:nth-child(3) {
             background: #7e7e7e;
             display: inline-block;
         }
 
         /* for even number  */
-        .list-items li:nth-child(2n){
+        .list-items li:nth-child(2n) {
             border: 1px solid gray;
         }
 
         /* for odd number  */
-        .list-items li:nth-child(2n+1){
+        .list-items li:nth-child(2n+1) {
             border: 1px solid rgb(220, 21, 21);
             font-weight: 700;
         }
 
-        a:visited{
+        a:visited {
             color: #3bec05;
         }
-
-
     </style>
 </head>
+
 <body>
     <h1 class="greting">Hello Jiad</h1>
 
@@ -83,5 +85,66 @@
         <br>
         <a href="https://stylaxx.com/">STYLAXX</a>
     </div>
+
+<!-- relative positon example  -->
+    <section class="position-container">
+
+        <div class="background-road">
+            <img class="roadPic" src="./pic/road.png" alt="">
+
+            <div class="bus_boy_container">
+                <div class="busContainer">
+                    <img class="busPic" src="./pic/bus.png" alt="">
+                </div>
+
+                <div class="boyPicContainer">
+                    <img class="boyPic" src="./pic/boy.png" alt="">
+                </div>
+            </div>
+
+            <div class="army-container">
+                <img src="./pic/army.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- absolute positon example  -->
+    <section class="position">
+
+        <div class="background">
+            <img class="road" src="./pic/road.png" alt="">
+
+
+            <div class="busCon">
+                <img class="bus" src="./pic/bus.png" alt="">
+            </div>
+
+            <div class="boyCon">
+                <img class="boy" src="./pic/boy.png" alt="">
+            </div>
+
+
+            <div class="armyCon">
+                <img src="./pic/army.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="pseudo-some">
+
+        <p>Hello bagladesh</p>
+        <p>hello bagladesh</p>
+        <p>hello bagladesh</p>
+        <p>hello bagladesh</p>
+        <p>hello bagladesh</p>
+        <p>hello bagladesh</p>
+
+    </section>
 </body>
+
 </html>
