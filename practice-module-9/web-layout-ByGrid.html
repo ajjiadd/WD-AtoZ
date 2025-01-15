@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-site area by Grid</title>
+
+    <style>
+
+        .header, .navbar, .mainSection, .sidebar, .advertise, .footerSection{
+            background-color: orangered;
+            border: 2px solid gray;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        } 
+
+        .header{
+            grid-area: header;
+        }
+
+        .navbar{
+            grid-area: navbar;
+        }
+
+        .mainSection{
+            grid-area: mainSection;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+        }
+
+        .advertise{
+            grid-area: advertise;
+        }
+
+        .footerSection{
+            grid-area: footerSection;
+        }
+
+        .container{
+            display: grid;
+            gap: 5px;
+            grid-template-areas: 
+            "header            header             header             header"
+            "navbar            mainSection        mainSection        sidebar"
+            "navbar            mainSection        mainSection        advertise"
+            "footerSection     footerSection      footerSection      footerSection"
+            ;
+        }
+
+        @media screen and (max-width:576px) {
+
+            .container{
+                grid-template-areas: 
+                "header"
+                "navbar"
+                "mainSection"
+                "sidebar"
+                "advertise"    
+                "footerSection"
+                ;
+            }
+
+            
+        }
+
+        @media screen and (min-width:576px) and (max-width:992px) {
+            .container{
+                grid-template-areas: 
+                "header         header          header"
+                "navbar         navbar          navbar"
+                "sidebar        mainSection     mainSection"
+                "advertise      footerSection   footerSection"    
+                ;
+            }
+        }
+
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h1 class="headerTitle">Header</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="" class="menu-1">Menu-1</a></li>
+            <li><a href="" class="menu-2">Menu-2</a></li>
+            <li><a href="" class="menu-3">Menu-3</a></li>
+        </ul>
+    </nav>
+    <main class="mainSection">
+        <h1>This is main section</h1>
+        <div class="article-1">
+            <h3>Article 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos expedita corrupti odio nesciunt minima maxime, natus exercitationem molestias sequi numquam quo maiores eaque quibusdam suscipit accusantium rerum velit consectetur iure.</p>
+            
+        </div>
+        <div class="article-2">
+            <h3>Article 2</h3>
+            <p>Beatae accusamus totam, officia repudiandae soluta eum qui saepe fugit deserunt, velit alias, pariatur accusantium. Minus beatae fuga quod dolor dolore esse sint illo laboriosam repellat quidem obcaecati, amet blanditiis.</p>
+            
+        </div>
+    </main>
+    
+        <div class="sidebar">
+            <h4>Sidebar</h4>
+        </div>
+        <div class="advertise">
+            <h4>Advertise</h4>
+        </div>
+    
+    <footer class="footerSection">
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>
