@@ -1,0 +1,316 @@
+/* body Layout */
+*{  
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.header{
+    border: 2px solid rgb(255, 244, 231);;
+            background-color: rgb(255, 244, 232);
+
+}
+.mainbody{
+    border: 2px;
+        padding: 40px;
+}
+.footer{
+    border: 2px solid grey;
+        padding: 30px;
+       
+}
+/* website design start from here  */
+
+
+/* header section design  */
+/* navbar section  */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 40px;
+}
+.btn_2{
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+    margin-left: 100px;
+   
+}
+.btn{
+    display: inline-block;
+    
+}
+.btn a{
+    text-decoration: none;
+        color: black;
+            padding-left: 42px;
+                font-size: 16px;
+                    
+}
+.arcts{
+    font-size: 24px;
+        font-weight: bold;
+        
+}
+/* head-line section  */
+.head_line h1{
+    font-size: 50px;
+        text-align: center;
+            margin-left: 5%;
+                margin-right: 5%;
+                    margin-top: 3.5%;
+                    font-weight: bold;
+}
+.head_line p{
+    text-align: center;
+        font-size: 17px;
+            margin-bottom: 25px;
+}
+.explore_btn{
+    text-align: center;
+        margin-bottom: 40px;
+}
+.explore_btn button{
+    padding: 18px;
+        background-color: rgb(255, 144, 14);
+            border-radius: 5px;
+                color: white;
+                    font-weight: bold;
+                        border-color: #ff900e;
+    
+}
+.pic{
+    text-align: center;
+        padding-bottom: 40px;
+}
+.pic img{
+        max-width: 80%;
+}
+/* body section design */
+/* 1st body design  */
+.sub_main_body_01{
+    border: 2px;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.pic_box{
+    border: 2px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    
+    width: 50%;
+    height: 100%;
+   
+}
+.pic_box div img{
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 3px;
+    
+}
+.pic_box div img:hover{
+    transition: transform 150ms;
+    transform: translateY(-10px);
+}
+
+.text_box{
+   
+    border: 2px;
+    width: 50%;
+    margin-left: 45px;
+    
+}
+.one{
+    font-size: 45px;
+    font-weight: 400;
+    
+}
+.two{
+    font-size: 45px;
+    font-weight: bold;
+    color: #ff900e;
+}
+.tex_box_line{
+    text-align: justify;
+    color: #727272;
+}
+.btn002{
+    border: 2px solid #ff900e;
+    background-color: #ff900e;
+    border-radius: 6px;
+    padding: 15px 20px ;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+/* 2nd body design  */
+/* text box section  */
+.text_and_pic{
+            border: 2px;
+            margin: 50px 8% 50px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+.text_box_two{
+    width: 100%;
+}
+.text_box_1{
+    
+}
+.text_box_2{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2%;
+    margin-bottom: 30px;
+}
+.bar0{
+    width: 6px;
+    height: 95px;
+    background-color: #ff900e;
+}
+.text_box_3{
+    padding-left: 3px;
+    color: black;
+    font-weight: 700;
+    font-size: 45px;
+}
+.t_box_5{
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 5%), 0 4px 15px 0 rgb(0 0 0 / 10%);
+   
+}
+.t_box_5:hover{
+    transition: transform 150ms ;
+    transform: translateY(-10px);
+}
+.t_box_5 h2{
+ color: black;
+}
+/* pic box section  */
+.pic_box_two_i{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    padding-left: 5%;
+}
+.pic_box_two{
+   
+}
+.p_box_1 img{
+   width: 100%;
+}
+.yearbox{
+    background-color: #FF900E;
+    text-align: center;
+    border-radius: 8px;
+    width: 230px;
+    height: 20%;
+    position: absolute;
+    margin-top: 44%;
+    margin-left: -1%;
+   
+}
+.yearbox h1 {
+    font-size: 50px;
+    margin-top: 10%;
+    color: white;
+}
+.yearbox p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10%;
+}
+/* 3rd main body desing  */
+.main_body_three{
+
+margin-left: 8%;
+margin-right: 8%;
+margin-top: 10%;
+margin-bottom: 10%;
+}
+.head_iii{
+    font-size: 40px;
+}
+.small_box{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 8%;
+    flex-wrap: wrap;
+}
+.small_box_all{
+    border: 2px solid rgb(255, 144, 14);
+    border-radius: 6px;
+    padding: 4%;
+    text-align: center;
+    
+}
+.small_box_all:hover{
+    transition: transform 150ms ;
+    transform: translateY(10px);
+}
+.small_box_all img{
+    height: 35px;
+    padding-bottom: 2px;
+}
+.small_box_all h2{
+    padding-bottom: 1px;
+}
+/* main body four design */
+.main_body_four{
+    
+    margin: 8%;
+}
+.four_i{
+    text-align: center;
+}
+.four_i h1{
+    margin-bottom: 35px;
+}
+.four_i p{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.four_ii{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
+.four_ii div img{
+    padding-top: 2.3%;
+    height: 45px;
+    padding-bottom: 5px;
+}
+
+/* footer section design */
+footer{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 4%;
+}
+.foot_i{
+    background-color: rgb(255, 244, 231);
+    padding: 3.5%;
+    text-align: center;
+
+}
+
+
