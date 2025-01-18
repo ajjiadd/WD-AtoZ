@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+
+        .box-container{
+            width: 200px;
+            height: 200px;
+            border: 2px solid gray;
+        }
+
+        .box-container div{
+            width: 200px;
+            height: 200px;
+            background: gold;
+        }
+
+        .box1:hover{
+            transform: scale(0.5) rotate(45deg);
+            border: 5px solid rgb(143, 14, 203);
+        }
+
+        .box2:hover{
+            transform: scale(0.5)  translateY(200px);
+            border: 5px solid red;
+        }
+
+        .box3:hover{
+            transform: scale(0.5)  translateX(400px);
+            border: 5px solid green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box-container">
+            <div class="box1">
+
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box2">
+                
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box3">
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
