@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Animation</title>
+
+    <style>
+        .container{
+            border: 2px solid red;
+            margin: 50px 200px;
+            width: 1000px;
+            height: 500px;
+            display: flex;
+        }
+
+        .ball{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: yellowgreen;
+            animation: ping-pong 3s ease-in-out 1s infinite alternate;
+        }
+        @keyframes ping-pong {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 400px;
+                left: 200px;
+            }
+            50%{
+                top: 0px;
+                left: 400px;
+            }
+            75%{
+                top: 400px;
+                left: 600px;
+            }
+            100%{
+                top: 0px;
+                left: 900px;
+            }
+        }
+        .b1{
+            position: absolute;
+            background-color: red;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: ping-pong2 2s ease-in-out 1s infinite alternate;
+        }
+
+        @keyframes ping-pong2 {
+            0%{
+                top: 0px;
+                left: 800px;
+                
+            }
+            25%{
+                top: 400px;
+                left: 600px;
+            }
+            50%{
+                top: 0px;
+                left: 300px;
+            }
+            75%{
+                top: 400px;
+                left: 100px;
+                
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .b2{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: ping-pong3 2s ease-in-out 1s infinite alternate;
+            background-color: black;
+        }
+
+        @keyframes ping-pong3 {
+            0%{
+                top: 50px;
+                left: 700px;
+            }
+           
+            50%{
+                top: 400px;
+                left: 400px;
+            }
+           
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+
+    .container2{
+            border: 2px solid rgb(0, 30, 255);
+            margin: 50px 200px;
+            width: 900px;
+            height: 500px;
+    }
+
+
+        .b3{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: simple 2s ease-in-out 1s infinite alternate;
+            background-color: black;
+        }
+
+        @keyframes simple {
+            from{
+                transform: scale(0.5);
+                top: 0;
+                left: 800px;
+                
+            }
+
+            to{
+                transform: scale(1);
+                top:400px;
+                left: 0;
+                background-color: red;
+            }
+            
+        }
+
+        .b4{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            animation: simple2 2s ease-in-out 1s infinite alternate;
+            background-color: rgb(214, 7, 7);
+            border: 2px solid green
+        }
+
+        @keyframes simple2 {
+            from{
+                transform: rotate(0deg);
+                top: 0;
+            }
+
+            to{
+                transform: rotate(360deg);
+                top: 300px;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+        <div class="b1">
+
+        </div>
+        
+        <div class="ball b2">
+
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="b3">
+
+        </div>
+
+        <div class="b4">
+
+        </div>
+    </div>
+</body>
+</html>
