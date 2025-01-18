@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Custom Property USE var</title>
+    <style>
+        :root{
+            --primary-color: #ff0000;
+            --second-color: rgb(10, 224, 10);
+            --third-color: rgb(229, 17, 229);
+            --fst-font: 20px;
+        }
+
+        .container{
+            background-color: var(--primary-color);
+            padding: 20px;
+
+        }
+
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: var(--second-color);
+        }
+
+
+        /* for calc  */
+
+        .container2{
+            margin-top: 30px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);/*  or 100% - 220px */
+        }
+        .sidebar{
+            background-color: slategray;
+            height: 300px;
+        }
+        .mainPart{
+            background-color: rgb(10, 102, 194);
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="ball">
+
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="sidebar">
+            <p>This is sideBar</p>
+        </div>
+        <div class="mainPart">
+            <p>This is main part</p>
+        </div>
+    </div>
+    
+</body>
+</html>
