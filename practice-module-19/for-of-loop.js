@@ -1,0 +1,15 @@
+const fruits = ["Apple", "Orange", "Pineapple", "Banana", "Mango", "Strawberry", "Watermelon", "Grapes", "Peach", "Cherry"];
+
+//for-of loop
+for(const num of fruits){       //ex-1
+    console.log(num);
+}
+
+console.log("------------------exit new start---------------------");
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+//for-of loop
+for(let digit of numbers){
+    console.log(digit);
+}
