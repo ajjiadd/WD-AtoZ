@@ -27,7 +27,7 @@ function matchProduct(products, search){
     const matched = [];
     for(let product of products){
         //jodi product er name e search er value thake tahole matched array te push korbe
-        if(product.name.includes(search)){
+        if(product.name.toLowerCase().includes(search.toLowerCase())){
             matched.push(product);
         }
     }
