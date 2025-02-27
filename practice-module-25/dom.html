@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Dom Project</title>
+</head>
+<body>
+    <h1>Hello Bangladesh!</h1>
+    <h2 id="h-tag">How are you?</h2>
+    <h3 class="h3-tag">Where are you?</h3>
+
+    <button onclick="console.log(777)">Click Me</button>
+
+    <p class="cng-txt">Hello-"person!"</p>
+    <button onclick="changeText()">Change Text</button>
+
+
+    <script>
+        //1st way
+        document.getElementsByTagName('h1')[0].style.color = 'red';
+        //2nd way
+        document.getElementById('h-tag').style.color = 'blue';
+        //3rd way
+        document.getElementsByClassName('h3-tag')[0].style.color = 'green';
+        //4th way
+        const pTag = document.querySelector('.cng-txt');
+        function changeText(){
+            pTag.innerHTML = 'Hello-"Jiad!"';
+        }
+    </script>
+    
+</body>
+</html>
