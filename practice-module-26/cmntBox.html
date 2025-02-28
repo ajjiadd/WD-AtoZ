@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment-box</title>
+
+    <style>
+        .Stle{
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 2px solid #f85b5b;
+            border-radius: 10px;
+            background-color: #c6ef55;
+            text-align: center;
+        }
+        .btn{
+            background-color: #f85b5b;
+            padding: 10px 40px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .cmntBox{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .cmntWrit{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- commnet box  -->
+     <div class="parent">
+
+        <div class="cmntBox">
+            <p class="Stle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, animi. </p>
+        </div>
+
+        <div class="cmntWrit">
+            <textarea name="" cols="40" rows="5" id="wrtArea"></textarea>
+            <button id="cmnt-btn" class="btn">Comment</button>
+        </div>
+
+     </div>
+    
+    
+    
+    <script>
+        const wrtArea = document.getElementById('wrtArea');
+        const cmntBtn = document.getElementById('cmnt-btn');
+        const cmntBox = document.querySelector('.cmntBox');
+
+        // step-1
+        cmntBtn.addEventListener('click', function(){
+            //step-2 get the text from the textarea
+            const cmnt = wrtArea.value;
+
+            //step-3 create a new element
+            const newCmnt = document.createElement('p');
+            newCmnt.classList.add('Stle');
+            newCmnt.innerHTML = cmnt;
+
+            //step-4 append the new element to the cmntBox
+            cmntBox.appendChild(newCmnt);
+
+            //step-5 clear the textarea
+            wrtArea.value = '';
+
+            
+        })
+    </script>
+</body>
+</html>

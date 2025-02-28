@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-2 project</title>
+</head>
+<body>
+    <button id="chng-bg">Change BG</button>
+    <br>
+    <button id="chng-gold">Make Gold</button>
+
+
+    <script>
+        //1st way
+        document.getElementById('chng-bg').addEventListener('click', function chngBgColor() {
+            document.body.style.backgroundColor = 'green';
+        });
+
+        //2nd way
+        document.getElementById('chng-gold')
+        .addEventListener('click', function() {
+            document.body.style.backgroundColor = 'gold';
+        });
+
+    </script>
+</body>
+</html>
